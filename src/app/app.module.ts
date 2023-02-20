@@ -18,9 +18,10 @@ import { NotFoundComponentComponent } from './not-found-component/not-found-comp
   //home first, not found last
   imports: [
     BrowserModule,
-    ElementsModule,
     CollectionsModule,
     AppRoutingModule,//this is not found and should be last
+
+    //lazy loading: we deleted all refrences to ElementsModule first, to implement lazy loading
   
   ],
   providers: [],
